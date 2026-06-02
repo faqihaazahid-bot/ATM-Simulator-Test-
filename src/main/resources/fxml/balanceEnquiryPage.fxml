@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atmsimulator.controller.BalanceEnquiryPageController">
+   <children>
+      <ImageView fitHeight="666.0" fitWidth="622.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/ATM.jpeg" />
+         </image>
+      </ImageView>
+      <Text fx:id="currentBalanceText" layoutX="158.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR CURRENT ACCOUNT BALANCE is Rs :" />
+      <Button fx:id="BACKButton" onAction="#Back" layoutX="426.0" layoutY="413.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="BACK" />
+   </children>
+</AnchorPane>

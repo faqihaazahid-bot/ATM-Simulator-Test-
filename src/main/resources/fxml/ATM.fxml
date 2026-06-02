@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atmsimulator.controller.ATMController">
+   <center>
+      <AnchorPane prefHeight="636.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="618.0" fitWidth="629.0" layoutX="-3.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/ATM.jpeg" />
+               </image>
+            </ImageView>
+            <Button fx:id="DEPOSITButton" onAction="#Deposit" layoutX="170.0" layoutY="311.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" text="DEPOSIT" />
+            <Button fx:id="PINCHANGEButton" onAction="#PinChange" layoutX="169.0" layoutY="351.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="PIN CHANGE" />
+            <Button fx:id="CASHWITHDRAWButton" onAction="#CashWithdraw" layoutX="306.0" layoutY="311.0" mnemonicParsing="false" text="CASH WITHDRAW" />
+            <Button fx:id="MINISTATEMENTButton" onAction="#MiniStatement" layoutX="305.0" layoutY="351.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="MINI STATEMENT" />
+            <Button fx:id="BALANCEENQUIRYButton" onAction="#BalanceEnquiry" layoutX="169.0" layoutY="390.0" mnemonicParsing="false" text="BALANCE ENQUIRY" />
+            <Button fx:id="LOGOUTButton" onAction="#Logout" layoutX="430.0" layoutY="424.0" mnemonicParsing="false" text="LOGOUT" />
+            <Text layoutX="170.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select Your Transaction">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="MANAGEACCOUNTButton" onAction="#ManageAccount" layoutX="306.0" layoutY="390.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="MANAGE ACCOUNT" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

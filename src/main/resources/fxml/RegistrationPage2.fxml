@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atmsimulator.controller.RegistrationPage2Controller">
+   <children>
+      <ChoiceBox fx:id="EducationalQualificationChoiceBox" layoutX="192.0" layoutY="277.0" prefHeight="25.0" prefWidth="340.0" />
+      <ChoiceBox fx:id="IncomeChoiceBox" layoutX="192.0" layoutY="228.0" prefHeight="25.0" prefWidth="340.0" />
+      <ChoiceBox fx:id="CategoryChoiceBox" layoutX="192.0" layoutY="179.0" prefHeight="25.0" prefWidth="340.0" />
+      <ChoiceBox fx:id="ReligionChoiceBox" layoutX="192.0" layoutY="136.0" prefHeight="25.0" prefWidth="340.0" />
+      <Text layoutX="200.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Page 2: Additional Details" wrappingWidth="221.45123291015625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="SubmitButton" layoutX="467.0" layoutY="583.0" mnemonicParsing="false" onAction="#Submit" text="Submit">
+         <effect>
+            <ColorAdjust hue="-0.78" saturation="0.58" />
+         </effect>
+      </Button>
+      <Text fx:id="formNumberText" layoutX="467.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Form No :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="OccupationChoiceBox" layoutX="192.0" layoutY="323.0" prefHeight="25.0" prefWidth="340.0" />
+      <Text layoutX="55.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Educational Qualification" wrappingWidth="98.11981201171875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="66.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Religion">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="63.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="63.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Occupation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="111.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senior Citizen">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="292.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Existing Account">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="SeniorCitizenCheckBox" layoutX="216.0" layoutY="395.0" mnemonicParsing="false" />
+      <CheckBox fx:id="ExistingAccountCheckBox" layoutX="423.0" layoutY="395.0" mnemonicParsing="false" />
+      <CheckBox fx:id="AtmCardCheckBox" layoutX="178.0" layoutY="477.0" mnemonicParsing="false" text="ATM Card" />
+      <CheckBox fx:id="ChequeBookCheckBox" layoutX="176.0" layoutY="518.0" mnemonicParsing="false" text=" Cheque Book" />
+      <CheckBox fx:id="EStatementCheckBox" layoutX="420.0" layoutY="518.0" mnemonicParsing="false" text="E-Statement" />
+      <CheckBox fx:id="InternetBankingCheckBox" layoutX="288.0" layoutY="477.0" mnemonicParsing="false" text="Internet Banking" />
+      <CheckBox fx:id="MobileBankingCheckBox" layoutX="290.0" layoutY="518.0" mnemonicParsing="false" text="Mobile Banking" />
+      <CheckBox fx:id="EmailAlertCheckBox" layoutX="419.0" layoutY="477.0" mnemonicParsing="false" text="EMAIL Alerts" />
+      <Text layoutX="50.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Services Required">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="BackButton" layoutX="81.0" layoutY="583.0" mnemonicParsing="false" onAction="#Back" text=" Back ">
+         <effect>
+            <ColorAdjust hue="-0.78" saturation="0.58" />
+         </effect>
+      </Button>
+      <Button fx:id="CancelButton" layoutX="406.0" layoutY="583.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
